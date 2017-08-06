@@ -1,7 +1,5 @@
 <?php
-
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Default Filesystem Disk
@@ -12,9 +10,7 @@ return [
     | based disks are available to your application. Just store away!
     |
     */
-
     'default' => 'local',
-
     /*
     |--------------------------------------------------------------------------
     | Default Cloud Filesystem Disk
@@ -25,9 +21,7 @@ return [
     | will be bound as the Cloud disk implementation in the container.
     |
     */
-
     'cloud' => 's3',
-
     /*
     |--------------------------------------------------------------------------
     | Filesystem Disks
@@ -40,20 +34,16 @@ return [
     | Supported Drivers: "local", "ftp", "s3", "rackspace"
     |
     */
-
     'disks' => [
-
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
         ],
-
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
             'visibility' => 'public',
         ],
-
         's3' => [
             'driver' => 's3',
             'key' => 'your-key',
@@ -61,7 +51,5 @@ return [
             'region' => 'your-region',
             'bucket' => 'your-bucket',
         ],
-
     ],
-
 ];
